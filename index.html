@@ -6,12 +6,13 @@
     <title>Axicon Bessel Beam Visualizer</title>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
-        body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 24px; }
+        body { font-family: Arial, sans-serif; background: transparent !important; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 40px auto; padding: 24px; }
         .controls { margin-bottom: 24px; }
         .slider-label { margin-right: 12px; font-weight: bold; }
         #apex-value { font-weight: bold; color: #0074d9; }
         svg { background: #eef2f7; border-radius: 6px; }
+        .reference-eq-box { background: transparent; border-radius: 0; box-shadow: none; }
     </style>
 </head>
 <body>
@@ -35,7 +36,7 @@
         </div>
     </div>
     <div style="max-width:900px; margin: 0 auto; text-align:center; margin-top:32px;">
-        <div style="display:inline-block; background:#f4f8fb; border-radius:8px; padding:16px 28px; box-shadow:0 1px 4px #0001; font-size:1.1em;">
+        <div class="reference-eq-box" style="display:inline-block; padding:16px 28px; font-size:1.1em;">
             <b>Reference Equations:</b><br/>
             <span style="font-size:1.1em; font-family:serif; display:block; margin:6px 0;">
                 α = arctan(A₁ / l)<br/>
@@ -46,9 +47,6 @@
             <span style="font-size:0.98em; color:#555;">where α is the physical angle, l is the axicon length, n is the refractive index, d is the ring diameter, h is the height, and A₁ is a geometric parameter.</span>
         </div>
     </div>
-    <footer style="text-align:center; margin-top:40px; margin-bottom:15px; color:#888; font-size:0.95em;">
-        Made by <a href="https://www.fulteng.com" target="_blank" style="color:#0074d9; text-decoration:none;">www.fulteng.com</a>, Dr.Siyu Ren. All Right Reserved 2025
-    </footer>
     <script src="axicon.js"></script>
 </body>
 </html> 
